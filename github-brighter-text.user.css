@@ -1,0 +1,67 @@
+/* ==UserStyle==
+@author       Wenfang Du
+@homepageURL  https://github.com/wenfangdu/github-brighter-text
+@license      MIT
+@name         GitHub Brighter Text
+@namespace    Wenfang Du
+@preprocessor less
+@updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
+@var          color text-color 'Text Color' #eee
+@version      1.2.2
+==/UserStyle== */
+
+@-moz-document domain('github.com') {
+  .vars() {
+    --color-auto-gray-6: @text-color;
+    --color-auto-gray-7: @text-color;
+    --color-btn-text: @text-color;
+    --color-counter-text: @text-color;
+    --color-diff-blob-hunk-text: @text-color;
+    --color-files-explorer-icon: @text-color;
+    --color-footer-invertocat-octicon-hover: @text-color;
+    --color-footer-invertocat-octicon: @text-color;
+    --color-header-text: @text-color;
+    --color-icon-primary: @text-color;
+    --color-icon-secondary: @text-color;
+    --color-icon-tertiary: @text-color;
+    --color-label-primary-text: @text-color;
+    --color-label-secondary-text: @text-color;
+    --color-menu-heading-text: @text-color;
+    --color-prettylights-syntax-comment: @text-color;
+    --color-text-primary: @text-color;
+    --color-text-secondary: @text-color;
+    --color-text-tertiary: @text-color;
+    --color-timeline-text: @text-color;
+    --color-underlinenav-counter-text: @text-color;
+    --color-underlinenav-icon-active: @text-color;
+    --color-underlinenav-icon-hover: @text-color;
+    --color-underlinenav-icon: @text-color;
+    --color-underlinenav-text-active: @text-color;
+    --color-underlinenav-text-hover: @text-color;
+    --color-underlinenav-text: @text-color;
+
+    .issues-reset-query-icon {
+      --color-icon-tertiary: var(--color-scale-gray-5);
+    }
+  }
+  [data-color-mode='dark'][data-dark-theme='dark'],
+  [data-color-mode='dark'][data-dark-theme='dark_dimmed'] {
+    .vars() !important;
+  }
+  @media (prefers-color-scheme: light) {
+    [data-color-mode='auto'][data-light-theme='dark'],
+    [data-color-mode='auto'][data-light-theme='dark_dimmed'] {
+      .vars() !important;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    [data-color-mode='auto'][data-dark-theme='dark'],
+    [data-color-mode='auto'][data-dark-theme='dark_dimmed'] {
+      .vars() !important;
+    }
+  }
+  /* fix Grammarly widget's text color */
+  [data-color-mode] {
+    color: var(--color-scale-black) !important;
+  }
+}
