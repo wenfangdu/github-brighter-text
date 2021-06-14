@@ -1,8 +1,7 @@
 # GitHub Brighter Text
 
-[![GitHub license](https://img.shields.io/github/license/wenfangdu/github-brighter-text)](https://github.com/wenfangdu/github-brighter-text/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/wenfangdu/github-brighter-text)](https://github.com/wenfangdu/github-brighter-text/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/wenfangdu/github-brighter-text)](https://github.com/wenfangdu/github-brighter-text/network)
+[![GitHub license](https://img.shields.io/github/license/wenfangdu/github-brighter-text?color=brightgreen)](https://github.com/wenfangdu/github-brighter-text/blob/main/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fwenfangdu%2Fgithub-brighter-text)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fwenfangdu%2Fgithub-brighter-text)
 
 > ✨ Light up GitHub's dark mode
 
