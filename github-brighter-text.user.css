@@ -7,7 +7,7 @@
 @preprocessor less
 @updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
 @var          color text-color 'Text Color' #eee
-@version      1.2.2
+@version      1.2.3
 ==/UserStyle== */
 
 @-moz-document domain('github.com') {
@@ -60,8 +60,7 @@
       .vars() !important;
     }
   }
-  /* fix Grammarly widget's text color */
-  [data-color-mode] {
+  grammarly-mirror {
     color: var(--color-scale-black) !important;
   }
 }
