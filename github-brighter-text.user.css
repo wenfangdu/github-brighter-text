@@ -7,13 +7,11 @@
 @preprocessor less
 @updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
 @var          color text-color 'Text Color' #eee
-@version      1.2.3
+@version      1.3.0
 ==/UserStyle== */
 
 @-moz-document domain('github.com') {
   .vars() {
-    --color-auto-gray-6: @text-color;
-    --color-auto-gray-7: @text-color;
     --color-btn-text: @text-color;
     --color-counter-text: @text-color;
     --color-diff-blob-hunk-text: @text-color;
@@ -40,27 +38,39 @@
     --color-underlinenav-text-hover: @text-color;
     --color-underlinenav-text: @text-color;
 
+    /* overrides */
     .issues-reset-query-icon {
       --color-icon-tertiary: var(--color-scale-gray-5);
     }
   }
+
   [data-color-mode='dark'][data-dark-theme='dark'],
   [data-color-mode='dark'][data-dark-theme='dark_dimmed'] {
     .vars() !important;
   }
+
   @media (prefers-color-scheme: light) {
     [data-color-mode='auto'][data-light-theme='dark'],
     [data-color-mode='auto'][data-light-theme='dark_dimmed'] {
       .vars() !important;
     }
   }
+
   @media (prefers-color-scheme: dark) {
     [data-color-mode='auto'][data-dark-theme='dark'],
     [data-color-mode='auto'][data-dark-theme='dark_dimmed'] {
       .vars() !important;
     }
   }
+
   grammarly-mirror {
-    color: var(--color-scale-black) !important;
+    color: black;
+  }
+}
+
+@-moz-document domain('raw.githubusercontent.com') {
+  body {
+    background: black;
+    color: @text-color;
   }
 }
