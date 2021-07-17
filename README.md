@@ -17,6 +17,6 @@ Text color defaults to `#eee`, you can adjust it to your liking using Stylus.
 
 ## Theme Preview
 
-![Profile Preview](profile.png)
+![Profile Preview](images/profile.png)
 
-![Repo Preview](repo.png)
+![Repo Preview](images/repo.png)
