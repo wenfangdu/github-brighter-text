@@ -7,7 +7,7 @@
 @preprocessor less
 @updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
 @var          color text-color 'Text Color' #eee
-@version      1.4.1
+@version      1.4.2
 ==/UserStyle== */
 
 @document domain('github.com') {
@@ -24,6 +24,7 @@
     --color-header-text: @text-color;
     --color-icon-primary: @text-color;
     --color-icon-secondary: @text-color;
+    --color-icon-tertiary: @text-color;
     --color-label-primary-text: @text-color;
     --color-label-secondary-text: @text-color;
     --color-menu-heading-text: @text-color;
@@ -39,6 +40,11 @@
     --color-underlinenav-text-active: @text-color;
     --color-underlinenav-text-hover: @text-color;
     --color-underlinenav-text: @text-color;
+
+    /* overrides */
+    .issues-reset-query-icon {
+      --color-icon-tertiary: var(--color-scale-gray-5);
+    }
   }
 
   [data-color-mode='dark'][data-dark-theme='dark'],
