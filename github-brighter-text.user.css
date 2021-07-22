@@ -7,11 +7,12 @@
 @preprocessor less
 @updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
 @var          color text-color 'Text Color' #eee
-@version      1.4.2
+@version      1.4.3
 ==/UserStyle== */
 
 @document domain('github.com') {
   .vars() {
+    --color-auto-gray-4: @text-color;
     --color-branch-name-text: @text-color;
     --color-btn-text: @text-color;
     --color-counter-primary-text: @text-color;
