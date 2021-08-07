@@ -72,8 +72,7 @@
   }
 }
 
-@document domain('raw.githubusercontent.com'),
-          domain('github.githubassets.com') {
+@document domain('raw.githubusercontent.com'), domain('github.githubassets.com') {
   body {
     background: black;
     color: @text-color;
