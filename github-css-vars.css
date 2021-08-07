@@ -297,8 +297,7 @@
   --color-btn-outline-hover-bg: #30363d;
   --color-btn-outline-hover-border: #58a6ff;
   --color-btn-outline-hover-shadow: 0 1px 0 rgba(1, 4, 9, 0.1);
-  --color-btn-outline-hover-inset-shadow: inset 0 1px 0
-    rgba(240, 246, 252, 0.03);
+  --color-btn-outline-hover-inset-shadow: inset 0 1px 0 rgba(240, 246, 252, 0.03);
   --color-btn-outline-hover-counter-bg: rgba(240, 246, 252, 0.2);
   --color-btn-outline-selected-text: #f0f6fc;
   --color-btn-outline-selected-bg: #0d419d;
