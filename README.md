@@ -17,6 +17,6 @@ Text color defaults to `#eee`, you can adjust it to your liking using Stylus.
 
 ## Theme Preview
 
-![Profile Preview](images/profile.png)
+![Profile Preview](https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/images/profile.png)
 
-![Repo Preview](images/repo.png)
+![Repository Preview](https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/images/repo.png)
