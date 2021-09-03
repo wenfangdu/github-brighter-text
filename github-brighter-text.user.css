@@ -7,25 +7,22 @@
 @preprocessor less
 @updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
 @var          color text-color 'Text Color' #eee
-@version      1.4.3
+@version      1.5.0
 ==/UserStyle== */
 
 @document domain('github.com') {
   .vars() {
-    --color-auto-gray-4: @text-color;
     --color-branch-name-text: @text-color;
     --color-btn-text: @text-color;
     --color-counter-primary-text: @text-color;
     --color-counter-secondary-text: @text-color;
     --color-counter-text: @text-color;
     --color-diff-blob-hunk-text: @text-color;
-    --color-files-explorer-icon: @text-color;
     --color-footer-invertocat-octicon-hover: @text-color;
     --color-footer-invertocat-octicon: @text-color;
     --color-header-text: @text-color;
     --color-icon-primary: @text-color;
     --color-icon-secondary: @text-color;
-    --color-icon-tertiary: @text-color;
     --color-label-primary-text: @text-color;
     --color-label-secondary-text: @text-color;
     --color-menu-heading-text: @text-color;
@@ -41,11 +38,6 @@
     --color-underlinenav-text-active: @text-color;
     --color-underlinenav-text-hover: @text-color;
     --color-underlinenav-text: @text-color;
-
-    /* overrides */
-    .issues-reset-query-icon {
-      --color-icon-tertiary: var(--color-scale-gray-5);
-    }
   }
 
   [data-color-mode='dark'][data-dark-theme='dark'],
@@ -68,13 +60,13 @@
   }
 
   grammarly-mirror {
-    color: black;
+    color: #000;
   }
 }
 
 @document domain('raw.githubusercontent.com'), domain('github.githubassets.com') {
   body {
-    background: black;
+    background: #000;
     color: @text-color;
   }
 }
