@@ -7,54 +7,34 @@
 @preprocessor less
 @updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
 @var          color text-color 'Text Color' #eee
-@version      1.5.0
+@version      1.6.0
 ==/UserStyle== */
 
 @document domain('github.com') {
   .vars() {
-    --color-branch-name-text: @text-color;
     --color-btn-text: @text-color;
-    --color-counter-primary-text: @text-color;
-    --color-counter-secondary-text: @text-color;
-    --color-counter-text: @text-color;
-    --color-diff-blob-hunk-text: @text-color;
-    --color-footer-invertocat-octicon-hover: @text-color;
+    --color-fg-default: @text-color;
+    --color-fg-muted: @text-color;
+    --color-fg-subtle: @text-color;
     --color-footer-invertocat-octicon: @text-color;
-    --color-header-text: @text-color;
-    --color-icon-primary: @text-color;
-    --color-icon-secondary: @text-color;
-    --color-label-primary-text: @text-color;
-    --color-label-secondary-text: @text-color;
-    --color-menu-heading-text: @text-color;
     --color-prettylights-syntax-comment: @text-color;
     --color-text-primary: @text-color;
     --color-text-secondary: @text-color;
     --color-text-tertiary: @text-color;
-    --color-timeline-text: @text-color;
-    --color-underlinenav-counter-text: @text-color;
-    --color-underlinenav-icon-active: @text-color;
-    --color-underlinenav-icon-hover: @text-color;
-    --color-underlinenav-icon: @text-color;
-    --color-underlinenav-text-active: @text-color;
-    --color-underlinenav-text-hover: @text-color;
-    --color-underlinenav-text: @text-color;
   }
 
-  [data-color-mode='dark'][data-dark-theme='dark'],
-  [data-color-mode='dark'][data-dark-theme='dark_dimmed'] {
+  [data-color-mode='dark'][data-dark-theme^='dark'] {
     .vars() !important;
   }
 
   @media (prefers-color-scheme: light) {
-    [data-color-mode='auto'][data-light-theme='dark'],
-    [data-color-mode='auto'][data-light-theme='dark_dimmed'] {
+    [data-color-mode='auto'][data-light-theme^='dark'] {
       .vars() !important;
     }
   }
 
   @media (prefers-color-scheme: dark) {
-    [data-color-mode='auto'][data-dark-theme='dark'],
-    [data-color-mode='auto'][data-dark-theme='dark_dimmed'] {
+    [data-color-mode='auto'][data-dark-theme^='dark'] {
       .vars() !important;
     }
   }
