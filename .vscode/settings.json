@@ -1,3 +1,6 @@
 {
-  "css.validate": false
+  "files.associations": {
+    "github-brighter-text.user.css": "less"
+  },
+  "less.lint.unknownAtRules": "ignore"
 }
