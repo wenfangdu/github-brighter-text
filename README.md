@@ -1,6 +1,7 @@
 # GitHub Brighter Text
 
-[![GitHub license](https://img.shields.io/github/license/wenfangdu/github-brighter-text?color=brightgreen)](https://github.com/wenfangdu/github-brighter-text/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/wenfangdu/github-brighter-text?color=blue)](https://github.com/wenfangdu/github-brighter-text/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wenfangdu/github-brighter-text)
 [![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fwenfangdu%2Fgithub-brighter-text)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fwenfangdu%2Fgithub-brighter-text)
 
 > ✨ Light up GitHub's dark mode
