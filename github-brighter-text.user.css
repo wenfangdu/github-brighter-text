@@ -7,38 +7,21 @@
 @preprocessor less
 @updateURL    https://raw.githubusercontent.com/wenfangdu/github-brighter-text/main/github-brighter-text.user.css
 @var          color text-color 'Text Color' #eee
-@version      1.7.4
+@version      1.7.5
 ==/UserStyle== */
 
 @document domain('github.com') {
   .mixin() {
     :root {
-      --bgColor-neutral-emphasis: var(--color-neutral-muted);
-      --color-btn-text: @text-color;
-      --color-fg-default: @text-color;
-      --color-fg-muted: @text-color;
-      --color-fg-subtle: @text-color;
+      --button-default-fgColor-rest: @text-color;
       --color-prettylights-syntax-comment: @text-color;
+      --control-fgColor-placeholder: @text-color;
+      --fgColor-muted: @text-color;
     }
 
     ::placeholder,
     .CommentBox-placeholder {
       opacity: 0.5;
-    }
-
-    grammarly-mirror {
-      color: #000;
-    }
-  }
-
-  .mixin() !important;
-}
-
-@document domain('raw.githubusercontent.com'), domain('github.githubassets.com') {
-  .mixin {
-    body {
-      background: #000;
-      color: @text-color;
     }
   }
 
